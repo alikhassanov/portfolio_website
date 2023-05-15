@@ -189,7 +189,7 @@ nav {
   left: 0%;
   z-index: 10;
   border-radius: 16px;
-  background-image: url(/resources/images/pfp-dark.png);
+  background-image: url(./resources/images/pfp-dark.png);
   background-position: 50% 50%;
   background-size: cover;
   box-shadow: none;
