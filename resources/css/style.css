@@ -107,8 +107,12 @@ nav {
 }
 
 .contact-button:hover {
-  background-color: #24477f;
-  border: 1px solid #24477f;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.contact-button:hover p {
+  color: #111;
 }
 
 /* HERO SECTION */
