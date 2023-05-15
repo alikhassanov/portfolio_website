@@ -395,6 +395,10 @@ nav {
   gap: 4px;
 }
 
+.skill-icons div svg path {
+  fill: rgba(255, 255, 255, 0.8);
+}
+
 .skill-icons div {
   display: flex;
   justify-content: center;
