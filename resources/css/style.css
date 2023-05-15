@@ -110,6 +110,27 @@ nav {
   padding: 21.5px;
 }
 
+.toggle-button:hover {
+  background-color: var(--text);
+  border: 1xp solid var(--text);
+}
+
+.toggle-button:hover svg path {
+  fill: var(--bw);
+}
+
+.toggle-icon-size {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle-icon-size svg path {
+  fill: var(--text1);
+}
+
 .contact-button {
   font-weight: 600;
   background-color: var(--text3);
@@ -168,7 +189,7 @@ nav {
   left: 0%;
   z-index: 10;
   border-radius: 16px;
-  background-image: url(/resources/images/pfp.jpg);
+  background-image: url(/resources/images/pfp-dark.png);
   background-position: 50% 50%;
   background-size: cover;
   box-shadow: none;
@@ -347,7 +368,7 @@ nav {
   height: 500px;
   margin-bottom: -40px;
   border-radius: 8px;
-  box-shadow: 0 0 64px var(--shadow);
+  box-shadow: 0 0 32px var(--shadow);
   object-fit: cover;
   object-position: 50% 0%;
   max-width: 100%;
@@ -429,6 +450,7 @@ nav {
 
 /* FOOTER */
 .content-wrapper.wide.footer {
+  justify-content: space-between;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -476,7 +498,7 @@ nav {
   --bg: #101319;
   --black: rgba(0, 0, 0, 1);
   --bw: rgba(0, 0, 0, 1);
-  --text: rgba(255, 255, 255, 1);
+  --text: rgba(255, 249, 246, 1);
   --text1: rgba(255, 255, 255, 0.8);
   --text2: rgba(255, 255, 255, 0.6);
   --text3: rgba(255, 255, 255, 0.08);
@@ -488,7 +510,7 @@ nav {
   --bg: #101319;
   --black: rgba(0, 0, 0, 1);
   --bw: rgba(0, 0, 0, 1);
-  --text: rgba(255, 255, 255, 1);
+  --text: rgba(255, 249, 246, 1);
   --text1: rgba(255, 255, 255, 0.8);
   --text2: rgba(255, 255, 255, 0.6);
   --text3: rgba(255, 255, 255, 0.08);
@@ -505,7 +527,7 @@ nav {
   --text2: rgba(10, 10, 10, 0.6);
   --text3: rgba(10, 10, 10, 0.08);
   --text4: rgba(10, 10, 10, 0.04);
-  --shadow: rgba(0, 0, 0, 0.2);
+  --shadow: rgba(140, 140, 140, 0.2);
 }
 
 /* MEDIA QUERIES */
@@ -619,6 +641,10 @@ nav {
     padding-left: 40px;
   }
 
+  .toggle-button {
+    padding: 13.5px;
+  }
+
   .content-wrapper.hero {
     padding-right: 128px;
     padding-left: 128px;
@@ -698,6 +724,10 @@ nav {
   h2 {
     font-size: 24px;
     line-height: 130%;
+  }
+
+  .toggle-button {
+    padding: 12.5px;
   }
 
   .content-wrapper {
